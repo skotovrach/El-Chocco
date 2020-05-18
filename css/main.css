@@ -41,6 +41,24 @@
   font-size: 1.12rem;
   color: inherit;
   text-decoration: none;
+  transition: 0.2s;
+}
+.hero .header .phone .phone__number:hover {
+  font-weight: 700;
+  transition: 0.2s;
+}
+.hero .header .phone .phone__number:hover:before {
+  background: url(/img/hero/phone_hover.png) no-repeat;
+  transition: 0.2s;
+}
+.hero .header .phone .phone__number:before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: black;
+  background: url(/img/hero/phone.png) no-repeat;
+  transition: 0.2s;
 }
 .hero .content {
   padding-top: 2.5rem;
@@ -70,6 +88,13 @@
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 50px;
+  color: #125a47;
+  transition: 0.3s;
+}
+.hero .content .button:hover {
+  background-color: #0a4d3c;
+  color: inherit;
+  transition: 0.3s;
 }
 .hero .content .benefit {
   margin-top: 3rem;
