@@ -1,0 +1,58 @@
+.review {
+    @include usual-article; justify-content: center; background-image: url(/img/reviews/strawberry_right.png); background-repeat: no-repeat; background-position: 98.2% 4%;
+    .product__title {
+        font-size: 2.4rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    .opinion {
+        margin-left: 4rem; margin-right: 4rem; margin-top: 1.8rem;
+        display: flex;
+        background-color: #f8faf9; background-image: url(/img/reviews/raspberry_pattern.png);position: relative;
+        .opinion__img-box {
+            width: 13rem; height: 13rem; overflow: hidden; position: relative;  margin: 2.2rem .75rem 2rem 2rem; flex-shrink: 0;
+            .opinion__img {display: block; width: 100%; height: 100%; object-fit: cover; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+        }
+        .opinion__text-box {
+            margin: 1.4rem 8.3rem 3.5rem 0;
+            .opinion__title {
+                font-size: 1.5rem;
+                font-weight: 700;
+            }
+            .opinion__content {
+            font-size: .9rem;
+            }
+            .opinion__author-name {
+            font-size: .9rem; font-family: "Alegreya Sans Medium", sans-serif;
+            margin-top: 1.5rem;
+            }
+        }
+    }
+    .pagination {
+        .pagination__list {
+            list-style: none; display: flex; justify-content: center;
+            .pagination__item {
+                .pagination__link {
+                   box-sizing:content-box; width: 3.5rem; height: 3.5rem; overflow: hidden; position: relative; border: 6px solid transparent; border-radius: 50%; display: block; @include zero;
+                   &--active {border-color: #0f5a47;}
+                    .opinion__img {display: block; width: 100%; height: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); object-fit: cover; }
+                }
+            }
+        }
+    }
+    .decoration {
+        background-image: url(/img/reviews/leaf_pattern_left.png); @include img-center; background-position: left bottom; position: absolute; 
+        height: 16rem; width: 100%; left: 0; bottom: -7rem; background-size: auto 16rem;
+        .decoration__img{
+        position: absolute; top: 3rem; left: .2rem;
+        }
+    }
+}
+
+
+// .opinion__img-box {
+//     width: 3.5rem; height: 3.5rem; overflow: hidden; position: relative; @include yellow-border; border-radius: 50%; border-width: 5px;
+//     .opinion__img {display: block; width: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+// }

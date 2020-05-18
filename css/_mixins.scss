@@ -1,0 +1,22 @@
+@mixin usual-article {
+    height: 100vh;
+    width: 100%;
+    display: flex; flex-direction: column;
+    position: relative;
+}
+@mixin zero {
+    margin: 0; padding: 0;
+}
+@mixin img-center {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+@mixin img-top {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+}
+@mixin yellow-border {
+    border: 4px solid yellow;
+}
