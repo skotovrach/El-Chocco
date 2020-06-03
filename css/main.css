@@ -174,6 +174,8 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  justify-content: center;
+  align-items: center;
   align-items: center;
   justify-content: center;
   padding: 0 4rem;
@@ -300,6 +302,8 @@
   flex-direction: column;
   position: relative;
   justify-content: center;
+  align-items: center;
+  justify-content: center;
   background-image: url(/img/reviews/strawberry_right.png);
   background-repeat: no-repeat;
   background-position: 98.2% 4%;
@@ -400,6 +404,241 @@
   position: absolute;
   top: 3rem;
   left: 0.2rem;
+}
+
+.team {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/img/team/pattern.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+.team .product__title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  color: black;
+  text-align: center;
+}
+.team .team__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 47rem;
+  margin-top: 3rem;
+}
+.team .team__list .team__item {
+  width: 11rem;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.team .team__list .team__item .team__img-holder {
+  width: 11rem;
+  height: 14.5rem;
+  overflow: hidden;
+  position: relative;
+}
+.team .team__list .team__item .team__img-holder .team__img {
+  display: block;
+}
+.team .team__list .team__item .team__desc .team__name {
+  font-size: 1.05;
+  font-weight: 700;
+  padding-top: 1.25rem;
+}
+.team .team__list .team__item .team__desc .team__job {
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+}
+.team .team__list .team__item .team__desc .team__skill {
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+.team .decoration {
+  width: 100%;
+  height: 6rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.team .decoration .decoration__img {
+  position: absolute;
+  right: 0;
+  top: -50%;
+  z-index: 10;
+}
+
+.menu {
+  background-image: url(/img/menu/background.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.menu .decoration {
+  width: 100%;
+  height: 6rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.menu .decoration .decoration__img {
+  position: absolute;
+  left: 0;
+  top: -50%;
+  z-index: 10;
+}
+
+.delivery {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background: url(/img/delivery/background_pattern.png);
+  padding: 0 4rem;
+}
+.delivery .product__title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  color: black;
+  text-align: center;
+}
+.delivery .form {
+  display: flex;
+  justify-content: space-between;
+  border: 4px solid yellow;
+  width: 100%;
+}
+.delivery .form .customer {
+  width: 49.2%;
+  background: #dde3bd;
+}
+.delivery .form .order {
+  width: 49.2%;
+}
+.delivery .decoration {
+  width: 100%;
+  height: 10rem;
+  position: absolute;
+  bottom: 8.25rem;
+  left: 0;
+  background-image: url(/img/delivery/blueberry.png);
+  background-repeat: no-repeat;
+  background-position: 1rem bottom;
+}
+.delivery .decoration .decoration__img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+.delivery .decoration--top {
+  height: 13.5rem;
+  top: 0;
+  right: 0;
+  background: none;
+}
+.delivery .decoration--top .decoration__img {
+  position: absolute;
+  right: 0;
+  top: -58%;
+  z-index: 10;
+}
+
+.map {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+  background-image: url(/img/map/map.png);
+  background-size: cover;
+}
+.map .footer {
+  position: absolute;
+  height: 4.75rem;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+.map .footer .contacts {
+  flex: 1;
+  font-size: 1.05rem;
+  padding-left: 4rem;
+}
+.map .footer .contacts .phone {
+  display: flex;
+  align-items: center;
+}
+.map .footer .contacts .phone .phone__img {
+  width: 0.65rem;
+  height: 0.65rem;
+  background-color: red;
+}
+.map .footer .contacts .phone .phone__number {
+  margin-left: 5px;
+}
+.map .footer .social {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.map .footer .social .social__list {
+  margin-right: 3rem;
+}
+.map .footer .social .social__list .social__item {
+  display: inline-block;
+  vertical-align: middle;
+}
+.map .footer .social .social__list .social__item .social__link {
+  width: 1.25rem;
+  height: 1.25rem;
+  background: lightpink;
+  display: block;
+  margin-right: 1rem;
+}
+
+.howWeAreWorking {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8faf9;
+  z-index: -10;
 }
 
 @font-face {

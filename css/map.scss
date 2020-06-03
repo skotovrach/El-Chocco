@@ -1,0 +1,39 @@
+.map {
+    @include usual_article;
+    @include img-top;
+    background-image: url(/img/map/map.png); background-size: cover;
+    .footer {
+        position: absolute; height: 4.75rem; width:100%; bottom: 0; left: 0; 
+        background-color: white;
+        display: flex;
+        align-items: center;
+        .contacts {flex: 1; 
+            font-size: 1.05rem;
+            padding-left: 4rem;
+            .address {
+                
+            }
+            .phone {
+                display: flex; align-items: center;
+                .phone__img {
+                width: .65rem; height: .65rem; background-color: red;
+                }
+                .phone__number {
+                    margin-left: 5px;
+                }
+            }
+        }
+        .social {
+        flex: 1;
+        display: flex; justify-content: flex-end;
+        .social__list {
+            margin-right: 3rem;
+            .social__item {display: inline-block; vertical-align: middle;
+                .social__link {
+                    width: 1.25rem; height: 1.25rem; background: lightpink; display: block; margin-right: 1rem;
+                }
+            }
+        }
+        }
+    }
+}
